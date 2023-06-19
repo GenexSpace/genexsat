@@ -14,7 +14,7 @@
           "category": "Arduino",
           "url": "https://resources.genex.space/GENEX_CANSAT.zip",
           "archiveFileName": "GENEX_CANSAT.zip",
-          "checksum": "SHA-256:396907A5073914BA29D3B56A779BBFB8050CAF46AE1F35E478AF4E5A03725492",
+          "checksum": "SHA256:24804695B99D33663D57AF09CF86EFAFF6FFED6D3EF0BF5721B55F74BF4C7E87",
           "size": "8374000",
           "boards": [
 		{
