@@ -1,0 +1,127 @@
+{
+  "name": "Genex Space CanSat Board",
+  "upload": {
+    "tool": "avrdude",
+    "tool.default": "avrdude",
+    "tool.network": "arduino_ota",
+    "protocol": "arduino",
+    "maximum_size": 30720,
+    "maximum_data_size": 2048,
+    "speed": 115200
+  },
+  "bootloader": {
+    "tool": "avrdude",
+    "tool.default": "avrdude",
+    "low_fuses": "0xFF",
+    "high_fuses": "0xDA",
+    "extended_fuses": "0x05",
+    "file": "optiboot/optiboot_atmega328.hex",
+    "unlock_bits": "0x3F",
+    "lock_bits": "0x0F"
+  },
+  "build": {
+    "f_cpu": "16000000L",
+    "board": "AVR_NANO",
+    "core": "arduino",
+    "variant": "GENEX_CANSAT_BOARD"
+  },
+  "menu": {
+    "cpu": {
+      "atmega328": "ATmega328P"
+    }
+  },
+  "menu.cpu.atmega328": {
+    "upload": {
+      "maximum_size": 30720,
+      "maximum_data_size": 2048,
+      "speed": 115200
+    },
+    "bootloader": {
+      "low_fuses": "0xFF",
+      "high_fuses": "0xDA",
+      "extended_fuses": "0xFD",
+      "file": "optiboot/optiboot_atmega328.hex"
+    },
+    "build": {
+      "mcu": "atmega328p"
+    }
+  },
+  "boards": [
+    {
+      "name": "Genex Space CanSat Board",
+      "upload": {
+        "tool": "avrdude",
+        "protocol": "arduino",
+        "maximum_size": 30720,
+        "maximum_data_size": 2048,
+        "speed": 115200
+      },
+      "bootloader": {
+        "tool": "avrdude",
+        "low_fuses": "0xFF",
+        "high_fuses": "0xDA",
+        "extended_fuses": "0x05",
+        "file": "optiboot/optiboot_atmega328.hex",
+        "unlock_bits": "0x3F",
+        "lock_bits": "0x0F"
+      },
+      "build": {
+        "f_cpu": "16000000L",
+        "board": "AVR_NANO",
+        "core": "arduino",
+        "variant": "GENEX_CANSAT_BOARD"
+      }
+    }
+  ],
+  "platforms": [
+    {
+      "name": "Genex Space CanSat Board",
+      "architecture": "avr",
+      "version": "1.0.0",
+      "category": "arduino",
+      "url": "https://resources.genex.space/Genex_Space_CanSat-1.0.0.zip",
+      "archiveFileName": "Genex_Space_CanSat-1.0.0.zip",
+      "checksum": "SHA-256:D73A22E7B0917917C8705D425434C7130C78EB02E68AD2F07A98B12894893041",
+      "size": "8044000",
+      "boards": [
+        {
+          "name": "Genex Space CanSat Board",
+          "upload": {
+            "tool": "avrdude",
+            "protocol": "arduino",
+            "maximum_size": 30720,
+            "maximum_data_size": 2048,
+            "speed": 115200
+          },
+          "bootloader": {
+            "tool": "avrdude",
+            "low_fuses": "0xFF",
+            "high_fuses": "0xDA",
+            "extended_fuses": "0x05",
+            "file": "optiboot/optiboot_atmega328.hex",
+            "unlock_bits": "0x3F",
+            "lock_bits": "0x0F"
+          },
+          "build": {
+            "f_cpu": "16000000L",
+            "board": "AVR_NANO",
+            "core": "arduino",
+            "variant": "GENEX_CANSAT_BOARD"
+          }
+        }
+      ],
+      "toolsDependencies": [
+        {
+          "packager": "arduino",
+          "name": "avr-gcc",
+          "version": "7.3.0-atmel3.6.1-arduino7"
+        },
+        {
+          "packager": "arduino",
+          "name": "avrdude",
+          "version": "6.3.0-arduino17"
+        }
+      ]
+    }
+  ]
+}
