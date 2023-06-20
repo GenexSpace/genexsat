@@ -16,7 +16,7 @@
             "url": "https://resources.genex.space/Genex_Space_CanSat-1.0.0.zip",
             "archiveFileName": "Genex_Space_CanSat-1.0.0.zip",
             "checksum": "SHA-256:D73A22E7B0917917C8705D425434C7130C78EB02E68AD2F07A98B12894893041",
-            "size": "8044000",
+            "size": "8236841",
             "boards": [
               {
                 "name": "Genex Space CanSat Board",
